@@ -6,3 +6,15 @@
      2.public List<user> findByNameStartingWith(String prefix)
 <br>
      https://docs.spring.io/spring-data/jpa/reference/repositories/query-keywords-reference.html
+
+
+
+
+
+2. Bean
+ - it is nothing but a simple java Object.<br>
+   There are two Ways to convert a plain old java object(POJO) into spring Bean<br>
+   1. by using annotation @component<br>
+   2. by using annotation @Configuration & @Bean. @Configuration at class level and in that class for function we use @Bean.
+   <br>
+ ApplicationContext - It is a implemention of IoC. it manages all the beans creation,deletion and dependency etc.
