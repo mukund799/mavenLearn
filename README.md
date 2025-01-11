@@ -1,5 +1,11 @@
 MAVEN
- - maven take cares of dependency management.
+ - Maven is a build automation tool primarily used for Java projects. It addresses two main 
+   aspects of building software: dependency management and project build lifecycle management.<br>
+ - It simplifies the build process by managing dependencies, compiling source code, packaging it 
+   into a deliverable (such as a JAR file), and deploying it to a repository.<br>
+ - Maven is based on the concept of a Project Object Model (POM), which is a central piece of 
+   information that manages a project’s build, reporting, and documentation.<br><br>
+
  - All dependency gets downloaded from central repo and gets stored in .m2 folder locally.
    <br> So when you works on different project in same system and you need any dependency then 1st it goes to your .m2 and check that dependency is there available or not. If it is available to your local then it provides to your project and if not available in your local then it downloads and stored to your .m2 folder and then provides to your required project.
 
