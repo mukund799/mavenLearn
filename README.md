@@ -52,3 +52,19 @@ SPRING
   to enable all, in application.properties - management.endpoints.web.exposure.include=* 
   - Actuator provides real-time monitoring
   - Exposes health, metrics, and environment info
+
+ 4. Annonation
+  - @Component - it is a Spring annotation used to mark a Java class as a Spring-managed bean. This means Spring will automatically detect and register the class as a bean in the Spring application context.<br>
+  - @Service - it is a specialized version of @Component that is used to mark a service layer bean in a Spring application.<br>
+  Indicates that the class contains business logic.
+  - @Repository - is a specialized version of @Component used to mark a Data Access Object (DAO) class.Identifies a class that interacts with the database.Works exactly like @Component but is used for data layer components.
+  - @Controller - is a Spring annotation used in Spring MVC to define a web controller that handles HTTP requests and returns views (e.g., JSP, Thymeleaf).<br>
+  Difference Between @Controller and @RestController:
+    - @Controller	Returns HTML views (JSP, Thymeleaf)
+    - @RestController	Returns JSON data (for REST APIs)<br>
+  - @RestController - it is a combination of @Controller + @ResponseBody.
+  - @Autowired - it is a Spring annotation used for dependency injection. It automatically injects required dependencies into a Spring-managed bean without manually creating objects.<br>
+  Reduces manual object creation (new ClassName() is not needed).
+  Use @Qualifier when multiple beans exist
+  Use @Primary to set a default bean
+
