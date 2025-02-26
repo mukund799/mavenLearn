@@ -12,10 +12,15 @@ MAVEN(https://www.learncodewithdurgesh.com/blogs/maven-tutorial)
 
 
 SPRING
-  1. Dependency Injection - Like in simple java application we can create object for a class and use it somewhere or in other class. So this become a tightly coupled. Beacuse we have to manage all the things.<br>
+  1. Dependency Injection - DI is a technique in which objects receive their dependencies from an external source (Spring Container), instead of creating them manually.<br>
+  Like in simple java application we can create object for a class and use it somewhere or in other class. So this become a tightly coupled. Beacuse we have to manage all the things.<br>
   Now we have Spring, So this object creation and deletion will managed by spring itself. Spring will create the object at compile time.<br>
 
   2. Spring IOC container - So all this object creation and managed right goes to spring which is take cared by spring Ioc container. so overall it manages object lifecycle<br>
+
+  3. Spring provides two main types of IoC Containers:
+    -	BeanFactory → Lightweight, used for simple applications.
+    -	ApplicationContext → More powerful, used in real-world apps.
 
 1.SpringDataJPA
 
@@ -35,10 +40,15 @@ SPRING
    There are two Ways to convert a plain old java object(POJO) into spring Bean<br>
    1. by using annotation @component<br>
    2. by using annotation @Configuration & @Bean. @Configuration at class level and in that class for function we use @Bean.
- ApplicationContext - It is a implemention of IoC. it manages all the beans creation,deletion and dependency etc.
+ - ApplicationContext - It is a implemention of IoC. it manages all the beans creation,deletion and dependency etc.
+ - Scope 
+    Singleton - it's by default. One instance per Spring container (shared).
+    Prototype - A new instance is created every time the bean is requested.
+
 
  3. Actuator
   - Spring Boot Actuator is a powerful feature that provides built-in monitoring, metrics, health checks, and environment info for your application.
-  - By default, only the /actuator/health and /actuator/info endpoints are enabled. 
+  - By default, only the /actuator/health and /actuator/info endpoints are enabled.
+  to enable all, in application.properties - management.endpoints.web.exposure.include=* 
   - Actuator provides real-time monitoring
   - Exposes health, metrics, and environment info
